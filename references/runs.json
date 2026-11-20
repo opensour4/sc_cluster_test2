@@ -1,0 +1,79 @@
+{
+  "source": {
+    "device": "NVIDIA L20Z",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6"
+  },
+  "data_sha256": "d44b06ee7a8b60a2bba91a0a8edcf2e2db8f5a3b2e20a1c058e824a9edacda64",
+  "runs": [
+    {
+      "shape": [
+        2,
+        128,
+        18533
+      ],
+      "rank_count": 1,
+      "step": 3,
+      "accumulation": 16,
+      "warmup_steps": 1000,
+      "training_seed": 3407,
+      "precision": "bf16",
+      "micro_groups_per_rank": 1,
+      "micro_cells_per_rank": 128,
+      "global_groups_per_update": 16,
+      "global_cells_per_update": 2048,
+      "infer_steps": 4,
+      "infer_seed": 3407,
+      "train_loss": 3.9497294425964355,
+      "validation_loss": 3.943610668182373,
+      "macro_nre": 1194.3708749910754,
+      "pds_response_rank": 0.5
+    },
+    {
+      "shape": [
+        2,
+        128,
+        18533
+      ],
+      "rank_count": 8,
+      "step": 3,
+      "accumulation": 16,
+      "warmup_steps": 1000,
+      "training_seed": 3407,
+      "precision": "bf16",
+      "micro_groups_per_rank": 1,
+      "micro_cells_per_rank": 128,
+      "global_groups_per_update": 128,
+      "global_cells_per_update": 16384,
+      "infer_steps": 4,
+      "infer_seed": 3407,
+      "train_loss": 3.9480838775634766,
+      "validation_loss": 3.943582534790039,
+      "macro_nre": 1194.3404688890894,
+      "pds_response_rank": 0.5
+    },
+    {
+      "shape": [
+        2,
+        128,
+        18533
+      ],
+      "rank_count": 8,
+      "step": 1,
+      "accumulation": 16,
+      "warmup_steps": 1000,
+      "training_seed": 3407,
+      "precision": "bf16",
+      "micro_groups_per_rank": 1,
+      "micro_cells_per_rank": 128,
+      "global_groups_per_update": 128,
+      "global_cells_per_update": 16384,
+      "infer_steps": 128,
+      "infer_seed": 3407,
+      "train_loss": 3.950915813446045,
+      "validation_loss": 3.9463322162628174,
+      "macro_nre": 1194.1624497589746,
+      "pds_response_rank": 0.0
+    }
+  ]
+}

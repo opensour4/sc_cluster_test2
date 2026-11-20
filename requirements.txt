@@ -1,0 +1,4 @@
+# Install the vendor's PyTorch build and device/collective plugin first.
+# Reference environment: Python 3.12, PyTorch 2.7.1.
+numpy==2.2.6
+scipy==1.17.1
